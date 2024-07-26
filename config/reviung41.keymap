@@ -21,10 +21,10 @@
             //                         | ALT | LWR | SPC | RSE  | ALT |
 
             bindings = <
-&kp TAB               &kp Q               &kp W                 &kp E           &kp R             &kp T             &kp Y  &kp U        &kp I          &kp O    &kp P     &kp BSPC
-&mt LS(LCTRL) ESCAPE  &kp A               &kp S                 &mt LEFT_ALT D  &kp F             &kp G             &kp H  &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT             &mt LS(LEFT_GUI) Z  &mt LC(LEFT_SHIFT) X  &kp C           &kp V             &kp B             &kp N  &kp M        &kp COMMA      &kp DOT  &kp FSLH  &mt RSHFT RET
-                                                                &kp LEFT_GUI    &lt 1 LS(ESCAPE)         &kp SPACE         &lt 2 ENTER  &kp RIGHT_ALT
+&kp TAB               &kp Q               &kp W                 &kp E           &kp R         &kp T             &kp Y  &kp U        &kp I          &kp O    &kp P     &kp BSPC
+&mt LS(LCTRL) ESCAPE  &kp A               &kp S                 &mt LEFT_ALT D  &kp F         &kp G             &kp H  &kp J        &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT             &mt LS(LEFT_GUI) Z  &mt LC(LEFT_SHIFT) X  &kp C           &kp V         &kp B             &kp N  &kp M        &kp COMMA      &kp DOT  &kp FSLH  &mt RSHFT RET
+                                                                &kp LEFT_GUI    &lt 1 ESCAPE         &kp SPACE         &lt 2 ENTER  &kp RIGHT_ALT
             >;
         };
 
@@ -38,7 +38,7 @@
             bindings = <
 &kp ESC  &kp EXCL         &kp AT           &kp HASH         &kp DLLR         &kp PRCNT                   &kp CARET       &kp AMPS      &kp ASTRK      &kp LPAR        &kp RPAR         &kp DEL
 &trans   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5             &kp KP_MINUS    &kp KP_EQUAL  &kp BACKSLASH  &kp LBKT        &kp RBKT         &kp GRAVE
-&trans   &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0             &kp UNDERSCORE  &kp KP_PLUS   &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE2
+&trans   &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0             &kp UNDERSCORE  &kp KP_PLUS   &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE
                                            &trans           &trans                            &kp SPACE                  &mo 3         &trans
             >;
         };
@@ -66,10 +66,10 @@
             //                                              |     |     |     |     |     |
 
             bindings = <
-&rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none   &rgb_ug RGB_TOG          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none   &none                    &none         &none         &none         &none         &none         &none
-&none            &none            &none            &none            &none   &none                    &sys_reset    &none         &none         &none         &none         &none
-                                                   &trans           &trans                   &tog 3                &trans        &trans
+&rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none   &rgb_ug RGB_TOG             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none   &none                       &none         &none         &none         &none         &none         &none
+&none            &none            &none            &none            &none   &none                       &sys_reset    &bootloader   &none         &none         &none         &none
+                                                   &trans           &trans                   &kp SPACE                &trans        &trans
             >;
         };
     };
