@@ -77,19 +77,19 @@
             //                                              |     |     |     |     |     |
 
             bindings = <
-&rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none   &rgb_ug RGB_TOG             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none   &none                       &none         &none         &none         &none         &none         &none
-&none            &none            &none            &none            &none   &none                       &sys_reset    &bootloader   &none         &none         &none         &none
-                                                   &trans           &trans                   &kp SPACE                &trans        &trans
+&rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none  &rgb_ug RGB_TOG             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none  &none                       &none         &none         &none         &none         &none         &none
+&none            &none            &none            &none            &none  &none                       &sys_reset    &bootloader   &none         &none         &none         &none
+                                                   &none            &none                   &kp SPACE                &none         &none
             >;
         };
 
         numbers {
             bindings = <
-&kp TAB         &trans  &trans  &trans        &trans        &trans          &kp KP_PLUS   &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp BACKSPACE
-&kp LCTRL       &trans  &trans  &trans        &trans        &trans          &kp ASTERISK  &kp SLASH     &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans        &trans        &trans          &kp EQUAL     &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT
-                                &kp LEFT_GUI  &kp LEFT_ALT          &trans                &trans        &trans
+&kp TAB         &none  &none  &none         &none         &none         &kp KP_PLUS   &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp BACKSPACE
+&kp LCTRL       &none  &none  &none         &none         &none         &kp ASTERISK  &kp SLASH     &kp KP_N4  &kp KP_N5  &kp KP_N6  &none
+&kp LEFT_SHIFT  &none  &none  &none         &none         &none         &kp EQUAL     &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT
+                              &kp LEFT_GUI  &kp LEFT_ALT         &none                &none         &none
             >;
         };
     };
