@@ -47,10 +47,10 @@
             //                       |     |     | RET | ADJ |     |
 
             bindings = <
-&trans  &kp EXCL         &kp AT           &kp HASH         &kp DLLR         &kp PRCNT                &kp CARET       &kp AMPS      &kp ASTRK      &kp LPAR        &kp RPAR         &kp DEL
-&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5          &kp KP_MINUS    &kp KP_EQUAL  &kp BACKSLASH  &kp LBKT        &kp RBKT         &kp GRAVE
-&trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0          &kp UNDERSCORE  &kp KP_PLUS   &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE
-                                          &trans           &trans                            &trans                  &mo 3         &trans
+&trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT             &kp CARET       &kp AMPS      &kp ASTRK      &kp LPAR        &kp RPAR         &kp DEL
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                &kp KP_MINUS    &kp KP_EQUAL  &kp BACKSLASH  &kp LBKT        &kp RBKT         &kp GRAVE
+&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0          &kp UNDERSCORE  &kp KP_PLUS   &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE
+                                    &trans        &trans                      &trans                  &mo 3         &trans
             >;
         };
 
