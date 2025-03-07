@@ -35,7 +35,7 @@
 &kp TAB          &kp Q  &kp W  &kp E         &kp R         &kp T               &kp Y  &kp U        &kp I               &kp O    &kp P     &kp BSPC
 &mt LCTRL GRAVE  &kp A  &kp S  &kp D         &kp F         &kp G               &kp H  &kp J        &kp K               &kp L    &kp SEMI  &kp SQT
 &kp LSHFT        &kp Z  &kp X  &kp C         &kp V         &kp B               &kp N  &kp M        &kp COMMA           &kp DOT  &kp FSLH  &kp GRAVE
-                               &kp LEFT_GUI  &lt 1 ESCAPE         &lt 4 SPACE         &lt 2 SPACE  &mt LEFT_ALT GRAVE
+                               &kp LEFT_GUI  &lt 1 ESCAPE         &lt 4 SPACE         &lt 2 ENTER  &mt LEFT_ALT GRAVE
             >;
         };
 
@@ -50,7 +50,7 @@
 &trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT             &kp CARET       &kp AMPS      &kp ASTRK      &kp LPAR        &kp RPAR         &kp DEL
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                &kp KP_MINUS    &kp KP_EQUAL  &kp BACKSLASH  &kp LBKT        &kp RBKT         &kp GRAVE
 &trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0          &kp UNDERSCORE  &kp KP_PLUS   &kp PIPE       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE
-                                    &trans        &trans                      &trans                  &kp ENTER     &trans
+                                    &trans        &trans                      &trans                  &trans        &trans
             >;
         };
 
