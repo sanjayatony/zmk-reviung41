@@ -77,19 +77,19 @@
             //                                              |     |     |     |     |     |
 
             bindings = <
-&rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none  &rgb_ug RGB_TOG             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none  &none                       &none         &none         &none         &none         &none         &none
-&none            &none            &none            &none            &none  &none                       &sys_reset    &bootloader   &none         &none         &none         &none
+&rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none  &rgb_ug RGB_TOG             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none  &none                       &none         &none         &none           &none         &none         &none
+&none            &none            &none            &none            &none  &none                       &sys_reset    &bootloader   &studio_unlock  &none         &none         &none
                                                    &none            &none                   &kp SPACE                &none         &none
             >;
         };
 
         numbers {
             bindings = <
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)         &kp LG(NUMBER_6)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp BACKSPACE
-&trans  &none             &none             &none             &none             &none              &kp MINUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &none
-&trans  &none             &none             &none             &none             &none              &kp PLUS          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT       &none
-                                            &kp LEFT_GUI      &kp LEFT_ALT                  &none                    &kp EQUAL        &kp KP_NUMBER_0
+&trans  &none  &kp F10  &kp F7        &kp F4        &kp F1         &none      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp BACKSPACE
+&trans  &none  &kp F11  &kp F8        &kp F5        &kp F2         &kp MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &none
+&trans  &none  &kp F12  &kp F9        &kp F6        &kp F3         &kp PLUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT       &none
+                        &kp LEFT_GUI  &kp LEFT_ALT          &none             &kp EQUAL        &kp KP_NUMBER_0
             >;
         };
     };
