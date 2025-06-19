@@ -33,7 +33,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base_layer {
             // -------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
@@ -93,21 +93,39 @@
             >;
         };
 
-        numbers {
+        number_layer {
             bindings = <
-&trans  &none  &kp F10  &kp F7        &kp F4        &kp F1         &kp DOT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &kp BACKSPACE
-&trans  &none  &kp F11  &kp F8        &kp F5        &kp F2         &kp MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH      &none
-&trans  &none  &kp F12  &kp F9        &kp F6        &kp F3         &kp PLUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp STAR       &none
-                        &kp LEFT_GUI  &kp LEFT_ALT          &none             &kp EQUAL        &kp KP_NUMBER_0
+&none  &none  &kp F10  &kp F7        &kp F4        &kp F1         &kp DOT    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &none
+&none  &none  &kp F11  &kp F8        &kp F5        &kp F2         &kp MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH      &none
+&none  &none  &kp F12  &kp F9        &kp F6        &kp F3         &kp PLUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp STAR       &none
+                       &kp LEFT_GUI  &kp LEFT_ALT          &none             &kp EQUAL        &kp KP_NUMBER_0
             >;
         };
 
-        layer_5 {
+        volume_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans      &trans             &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans      &trans             &trans           &trans  &trans  &trans
-                        &trans  &trans          &trans              &trans             &trans
+&none  &none  &none  &none  &none  &none         &none       &none              &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none         &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none  &none  &none
+&none  &none  &none  &none  &none  &none         &none       &none              &none            &none  &none  &none
+                     &none  &none         &none              &none              &none
+            >;
+        };
+
+        layer_linux {
+            bindings = <
+&none  &kp TAB  &kp W  &kp E      &kp R         &kp T                &kp Y  &kp U        &kp I               &kp O    &kp P     &none
+&none  &kp A    &kp S  &kp D      &kp F         &kp G                &kp H  &kp J        &kp K               &kp L    &kp SEMI  &none
+&none  &kp Z    &kp X  &kp C      &kp V         &kp B                &kp N  &kp M        &kp COMMA           &kp DOT  &kp FSLH  &none
+                       &kp LCTRL  &lt 1 ESCAPE         &kp LEFT_GUI         &lt 2 SPACE  &hm LEFT_ALT GRAVE
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans          &trans          &trans  &trans
             >;
         };
     };
