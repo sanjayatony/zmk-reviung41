@@ -26,7 +26,7 @@
 
         tmux {
             bindings = <&kp LC(A)>;
-            key-positions = <12 13>;
+            key-positions = <14 13>;
         };
     };
 
