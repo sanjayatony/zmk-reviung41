@@ -71,10 +71,10 @@
             //                       |     | ADJ | BKSP |    |     |
 
             bindings = <
-&trans  &kp Q             &kp LG(N8)        &kp LG(NUMBER_7)  &kp LG(NUMBER_6)      &kp LG(N5)             &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp BACKSPACE  &none
-&trans  &sk LEFT_CONTROL  &sk LEFT_ALT      &sk LEFT_GUI      &sk LEFT_SHIFT        &none                  &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &kp DEL        &trans
-&trans  &sk LS(LEFT_GUI)  &sk LC(LEFT_GUI)  &sk LA(LEFT_GUI)  &sk LS(LEFT_CONTROL)  &trans                 &kp PIPE          &kp BACKSLASH     &kp HOME          &kp END           &kp LG(RIGHT)  &trans
-                                            &trans            &mo 3                             &kp SPACE                    &trans            &trans
+&trans  &kp Q             &kp LG(N8)        &kp LG(NUMBER_7)      &kp LG(NUMBER_6)      &kp LG(N5)             &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp BACKSPACE  &none
+&trans  &sk LEFT_CONTROL  &sk LEFT_SHIFT    &sk LS(LEFT_CONTROL)  &sk LA(LEFT_CONTROL)  &none                  &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &kp DEL        &trans
+&trans  &sk LS(LEFT_GUI)  &sk LC(LEFT_GUI)  &sk LA(LEFT_GUI)      &none                 &trans                 &kp PIPE          &kp BACKSLASH     &kp HOME          &kp END           &kp LG(RIGHT)  &trans
+                                            &trans                &mo 3                             &kp SPACE                    &trans            &trans
             >;
         };
 
