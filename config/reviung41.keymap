@@ -16,8 +16,45 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+        };
+
+        td_a_gui: td_a_gui {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_A_GUI";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&sk LEFT_GUI>;
+
+            tapping-term-ms = <150>;
+        };
+
+        td_s_alt: td_s_alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_S_ALT";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&sk LEFT_ALT>;
+
+            tapping-term-ms = <150>;
+        };
+
+        td_d_ctrl: td_d_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_D_CTRL";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&sk LCTRL>;
+
+            tapping-term-ms = <150>;
+        };
+
+        td_f_shift: td_f_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&sk LEFT_SHIFT>;
+
+            tapping-term-ms = <150>;
         };
     };
 
@@ -42,7 +79,7 @@
 
             bindings = <
 &none  &kp TAB           &kp W  &kp E         &kp R         &kp T         &kp Y  &kp U        &kp I               &kp O    &kp P     &none
-&none  &kp A             &kp S  &kp D         &kp F         &kp G         &kp H  &kp J        &kp K               &lt 4 L  &kp SEMI  &none
+&none  &td_a_gui         &kp S  &kp D         &kp F         &kp G         &kp H  &kp J        &kp K               &lt 4 L  &kp SEMI  &none
 &none  &hm LEFT_SHIFT Z  &kp X  &kp C         &kp V         &kp B         &kp N  &kp M        &kp COMMA           &kp DOT  &kp FSLH  &none
                                 &kp LEFT_GUI  &lt 1 ESCAPE         &mo 5         &lt 2 SPACE  &mt LEFT_ALT GRAVE
             >;
